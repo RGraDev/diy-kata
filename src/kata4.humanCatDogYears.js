@@ -1,9 +1,9 @@
-const humanCatDogYears = (number) => {
+const humanCatDogYears = (humanAge) => {
   let counter = 1;
   let catYears = 0;
   let dogYears = 0;
 
-  while (counter <= number) {
+  while (counter <= humanAge) {
     if (counter === 1) {
       catYears += 15;
       dogYears += 15;
@@ -18,9 +18,7 @@ const humanCatDogYears = (number) => {
       counter += 1;
     }
   }
-
-  const array = [number, catYears, dogYears];
-  return array;
+  return [humanAge, catYears, dogYears];
 };
 
 module.exports = humanCatDogYears;

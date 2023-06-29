@@ -6,10 +6,6 @@ describe("humanCatDogYears", () => {
     expect(humanCatDogYears(30)).toEqual([30, 136, 164]);
   });
   test("Correctly returns array when human years is zero", () => {
-
+    expect(humanCatDogYears(0)).toEqual([0, 0, 0]);
   });
 });
-
-expect(humanCatDogYears(1)).toEqual([1, 15, 15]);
-expect(humanCatDogYears(2)).toEqual([2, 24, 24]);
-expect(humanCatDogYears(0)).toEqual([0, 0, 0]);
